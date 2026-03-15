@@ -1,0 +1,1182 @@
+/* =====================
+   RESET DE BASE
+===================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =====================
+   BODY GLOBAL
+===================== */
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #3e2c1c;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: #f5ecd2;
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+
+}
+/* ACCUEIL + DECOUVRIR */
+
+.page-accueil,
+.page-decouvrir{
+
+background:
+linear-gradient(rgba(245,236,210,0.65), rgba(245,236,210,0.65)),
+url("wrestling-dakar-senegal-01.jpg");
+
+background-size:cover;
+background-position:center;
+background-attachment:fixed;
+
+}
+
+
+
+/* =====================
+   PAGE DECOUVRIR
+===================== */
+.slogan {
+    text-align: center;
+}
+
+/* =====================
+   BLOCS PRINCIPAUX
+===================== */
+.bloc, .bloc-decouvrir {
+    max-width: 1000px;
+    margin: 60px auto;
+}
+.video {
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+    width: 100%;           /* prend toute la largeur du bloc parent */
+    max-width: 1000px;     /* comme les autres blocs */
+    padding: 20px;         /* optionnel : espace autour de la vidéo */
+    background: rgba(245,236,210,0.9); /* même fond que .bloc-decouvrir */
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+.video video {
+    width: 100%;           /* la vidéo prend tout le bloc */
+    height: auto;          /* garde les proportions */
+    border-radius: 10px;
+}
+.bloc-decouvrir, .bloc-contenu {
+    background: rgba(245,236,210,0.9);
+    padding: 30px 35px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    line-height: 1.7;
+    transition: all 0.3s ease;
+}
+
+.bloc-contenu:hover,
+.bloc-decouvrir:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 35px rgba(0,0,0,0.25);
+}
+
+/* =====================
+   IMAGES ET VIDÉOS
+===================== */
+.image-lutte {
+    display: block;
+    max-width: 100%;
+    margin: 30px auto;
+    border-radius: 10px;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    
+}
+
+/* =====================
+   HEADER
+===================== */
+header {
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 90px;
+    position: relative;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffd78c;
+}
+
+nav a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: #ffd78c;
+    font-weight: 500;
+    position: relative;
+    transition: 0.3s;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #ffd78c;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+nav a:hover {
+    color: #fff4b1;
+}
+
+/* =====================
+   SECTIONS TRANSPARENTES
+===================== */
+.about, .fighters, .decouvrir, .cards, .lutteurs, footer {
+    background: transparent;
+    padding: 40px 80px;
+    margin: 20px auto;
+    border-radius: 10px;
+   
+}
+
+
+/* =====================
+   TITRES
+===================== */
+.hero-text h1,
+.titre,
+.about h2,
+.fighters h2,
+.decouvrir h2,
+.bloc h2 {
+    color: #ffd78c;
+    text-align: center;
+    text-shadow:
+        2px 2px 4px rgba(0,0,0,0.8),
+        -1px -1px 2px rgba(0,0,0,0.8),
+        1px -1px 2px rgba(0,0,0,0.8),
+        -1px 1px 2px rgba(0,0,0,0.8);
+    margin-bottom: 20px;
+}
+
+/* =====================
+   PARAGRAPHES
+===================== */
+p, .infos li {
+    color: rgb(99,60,15);
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+/* =====================
+   BOUTONS
+===================== */
+.btn {
+    background: #8b5e3c;
+    color: #ffd78c;
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #a0734f;
+    transform: scale(1.05);
+}
+
+
+/* =====================
+   HERO
+===================== */
+.hero {
+    height:80vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-combat {
+    height: 400px;
+    background: url("combat-arene.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* =====================
+   CARTES ACCUEIL
+===================== */
+.cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+.card {
+    flex: 1;
+    max-width: 280px;
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.card:hover img {
+    transform: scale(1.05);
+}
+
+.card h3 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 0;
+    background: rgba(0,0,0,0.5);
+    color: #ffd78c;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* =====================
+   RESET DE BASE
+===================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    background: #f5ecd2;
+    color: #3e2c1c;
+    display: flex;
+    flex-direction: column;
+}
+
+/* =====================
+   HEADER
+===================== */
+header {
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffd78c;
+}
+
+nav a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: #ffd78c;
+    font-weight: 500;
+    position: relative;
+    transition: 0.3s;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #ffd78c;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+nav a:hover {
+    color: #fff4b1;
+}
+
+/* =====================
+   MAIN
+===================== */
+main {
+    flex: 1;
+    margin-top: 100px; /* espace pour header fixe */
+    width: 100%;
+}
+
+/* =====================
+   HERO LUTTEURS
+===================== */
+.hero-lutteurs {
+    background: linear-gradient(rgba(245,236,210,0.65), rgba(245,236,210,0.65)), url("WhatsApp\ Image\ 2026-03-15\ at\ 14.29.25.jpeg");
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 12px;
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.hero-lutteurs-texte h1 {
+    color: #ffd78c;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+.hero-lutteurs-texte p {
+    color: #3e2c1c;
+    font-size: 16px;
+    line-height: 1.5;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+/* =====================
+   INTRO LUTTEURS
+===================== */
+.intro-lutteurs {
+    max-width: 1000px;
+    margin: 20px auto 40px auto;
+    padding: 20px 25px;
+    background: rgba(245,236,210,0.9);
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    text-align: center;
+}
+
+.intro-lutteurs p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #3e2c1c;
+}
+
+/* =====================
+   CONTENEUR LUTTEURS - EFFET ESCALIER
+===================== */
+.conteneur-lutteurs {
+    max-width: 1100px;
+    margin: 0 auto 60px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.bloc-lutteurs {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    flex: 1 1 auto;
+    max-width: 240px;
+    margin-bottom: 50px;
+}
+
+.bloc-lutteurs:nth-child(even) {
+    margin-top: 50px; /* effet escalier */
+}
+
+/* =====================
+   LUTTEUR + BOUTON CENTRÉ
+===================== */
+.lutteur {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.lutteur img {
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+    display: block;
+    border-radius: 8px;
+}
+
+.lutteur:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 35px rgba(0,0,0,0.25);
+}
+
+/* Bouton centré sans voile */
+.bouton-centre {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.lutteur:hover .bouton-centre {
+    opacity: 1;
+}
+
+.bouton-centre button {
+    padding: 10px 20px;
+    border: none;
+    background: #8b5e3c;
+    color: #ffd78c;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.bouton-centre button:hover {
+    background: #a0734f;
+    transform: scale(1.05);
+}
+
+/* =====================
+   POPUP LUTTEURS
+===================== */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 3000;
+}
+
+.popup-box {
+    background: #e7d7ba;
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 700px;
+    max-height: 80vh;
+    overflow-y: auto;
+    position: relative;
+}
+
+.popup-box h2 {
+    color: #3e2c1c;
+    margin-bottom: 15px;
+}
+
+.popup-box p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #63400f;
+}
+
+.fermer {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 22px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #333;
+}
+
+.fermer:hover {
+    color: red;
+}
+
+/* =====================
+   FOOTER
+===================== */
+footer {
+    background:#2b1c12;
+    color:#ffd78c;
+    padding: 40px 0 20px 0;
+    width:100%;
+    margin-top:auto;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1;
+}
+
+.footer-section h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.footer-section p, 
+.footer-section ul li a {
+    color:#e6cfa2;
+    font-size: 14px;
+    line-height:1.6;
+}
+
+.footer-section ul {
+    list-style:none;
+    padding:0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a:hover {
+    color: #ffd78c;
+}
+
+.footer-bottom {
+    border-top:1px solid rgba(255,215,140,0.3);
+    margin-top: 40px;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 13px;
+    color:#c9b08a;
+}
+
+/* =====================
+   RESPONSIVE
+===================== */
+@media (max-width:900px){
+    .bloc-lutteurs {
+        flex: 1 1 100%;
+        margin-top: 0 !important;
+    }
+}
+
+@media (max-width:500px){
+    header {
+        padding: 15px 20px;
+    }
+}
+
+
+/* ===================== PAGE COMBATS ===================== */
+body.page-combats {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* pour que footer reste en bas */
+    background: #f5ecd2; /* fond beige clair */
+    margin: 0;
+}
+
+body.page-combats main {
+    flex: 1 0 auto; /* pousse le footer vers le bas */
+}
+
+body.page-combats footer {
+    flex-shrink: 0; /* footer ne rétrécit pas */
+}
+
+.page-combats .hero {
+    margin-top: 100px;
+    text-align: center;
+    padding: 80px 20px;
+    color: #3e2c1c;
+}
+.page-combats .hero{
+    margin-top:50px;
+    padding:80px 20px;
+
+    background:
+    linear-gradient(rgba(245,236,210,0.75), rgba(245,236,210,0.75)),
+    url("WhatsApp\ Image\ 2026-03-14\ at\ 14.33.16.jpeg");
+
+    background-size:cover;
+    background-position:center;
+
+    border-radius:12px;
+    max-width:1100px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.page-combats .hero h1 { 
+    font-size: 40px; 
+    margin-bottom: 15px;
+}
+
+.page-combats .hero p { 
+    font-size: 18px; 
+}
+
+.page-combats .cards {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 40px;
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.page-combats .card {
+    display: flex;
+    flex-direction: column;      /* empile image + contenu */
+    justify-content: space-between; /* pousse le bouton en bas */
+    background: #fff5e0;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    transition: 0.3s;
+    position: relative;
+}
+
+.page-combats .card img {
+    width: 100%;
+    height: 180px;          /* réduit légèrement pour laisser plus de place au contenu */
+    object-fit: cover;
+}
+
+.page-combats .card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;  /* espace entre texte et bouton */
+    padding: 15px;
+    flex: 1;                        /* prend tout l’espace disponible */
+}
+
+.page-combats .card-content h3 {
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #3e2c1c;
+}
+
+.page-combats .card-content p {
+    font-size: 14px;
+    color: #63400f;
+    line-height: 1.4;
+    margin-bottom: 12px;
+    flex-grow: 1;                 /* texte prend tout l’espace restant */
+}
+
+.page-combats .btn {
+    align-self: flex-start;        /* bouton en bas à gauche */
+    margin-top: auto;
+}
+
+.page-combats .btn:hover { 
+    background: #a0734f; 
+    transform: scale(1.05); 
+}
+
+.page-combats .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 35px rgba(0,0,0,0.25);
+}
+/* Grille pour les blocs de combats */
+.cards-combats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 colonnes sur la première ligne */
+    gap: 30px;
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+/* Bloc vertical : mêmes dimensions que les autres */
+.combat-block {
+    background: #f5ecd2;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.combat-block img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.combat-block .card-content {
+    padding: 15px;
+    flex: 1;
+}
+
+/* Blocs horizontaux : côte à côte, chacun prend 2 colonnes */
+.combat-block.horizontal {
+    grid-column: span 2; /* chaque bloc prend 2 colonnes */
+}
+
+/* Hover */
+.combat-block:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 35px rgba(0,0,0,0.25);
+}
+
+/* Boutons */
+.combat-block .btn {
+    margin-top: auto;
+    display: inline-block;
+    padding: 10px 20px;
+    background: #8b5e3c;
+    color: #ffd78c;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.combat-block .btn:hover {
+    background: #a0734f;
+    transform: scale(1.05);
+}
+
+/* ===================== RESPONSIVE ===================== */
+@media (max-width:900px){
+    .cards-combats {
+        grid-template-columns: repeat(2,1fr); /* 2 colonnes sur tablette */
+    }
+    .combat-block.horizontal {
+        grid-column: span 2; /* garde 2 colonnes sur tablette */
+    }
+}
+
+@media (max-width:600px){
+    .cards-combats {
+        grid-template-columns: 1fr; /* 1 colonne sur mobile */
+    }
+    .combat-block.horizontal {
+        grid-column: span 1;
+    }
+}
+/* PAGE DETAILS COMBAT */
+
+/* ===================== PAGE DETAILS ===================== */
+body.page-details {
+    background: #f5ecd2; /* fond beige clair */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+body.page-details main {
+    flex: 1;
+}
+
+/* ===================== BLOCS DÉTAIL ===================== */
+.page-details .bloc {
+    display: flex;
+    flex-direction: row;   /* image à gauche, texte à droite */
+    align-items: flex-start;
+    gap: 30px;
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 20px;
+    background: rgba(245,236,210,0.9);
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.page-details .bloc img {
+    width: 50%;      /* image prend la moitié du bloc */
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.page-details .bloc p {
+    width: 50%;      /* texte prend l’autre moitié */
+    font-size: 16px;
+    line-height: 1.7;
+    color: #63400f;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+.page-details h2 {
+    color: #ffd78c;
+    margin-bottom: 20px;
+    text-shadow:
+        2px 2px 4px rgba(0,0,0,0.8),
+        -1px -1px 2px rgba(0,0,0,0.8),
+        1px -1px 2px rgba(0,0,0,0.8),
+        -1px 1px 2px rgba(0,0,0,0.8);
+}
+
+.bloc-detail{
+display:flex;
+gap:20px;
+max-width:1000px;
+margin:60px auto;
+padding:20px;
+background:rgba(245,236,210,0.9);
+border-radius:12px;
+box-shadow:0 10px 25px rgba(0,0,0,0.15);
+
+min-height:450px; /* hauteur du bloc */
+align-items:stretch; /* les éléments prennent toute la hauteur */
+}
+
+/* conteneur image */
+.image-container{
+flex:1;
+overflow:hidden; /* empêche l'image de sortir du bloc */
+}
+
+/* image */
+.image-container img{
+width:100%;
+height:100%;
+object-fit:cover;
+border-radius:10px;
+}
+
+/* conteneur texte */
+.texte-container{
+flex:1;
+display:flex;
+flex-direction:column;
+justify-content:center; /* centre verticalement */
+}
+/* footer */
+body.page-details footer {
+    margin-top: auto; /* toujours en bas */
+}
+/* =====================
+   PAGE GALERIE STYLE NETFLIX
+===================== */
+
+.page-galerie{
+background:#f6efe2;
+min-height:100vh;
+display:flex;
+flex-direction:column;
+}
+
+/* titre */
+
+.titre-galerie{
+text-align:center;
+font-size:34px;
+margin:40px 0;
+color:#3e2c1c;
+}
+
+/* ligne galerie */
+
+.galerie{
+
+display:flex;
+
+gap:20px;
+
+overflow-x:auto;
+
+padding:40px 60px;
+
+scroll-behavior:smooth;
+
+}
+
+/* images */
+
+.galerie img{
+
+width:300px;
+
+height:200px;
+
+object-fit:cover;
+
+border-radius:10px;
+
+flex-shrink:0;
+
+transition:0.4s;
+
+cursor:pointer;
+
+}
+
+/* effet netflix */
+
+.galerie img:hover{
+
+transform:scale(1.15);
+
+z-index:2;
+
+}
+
+/* cacher la barre de scroll */
+
+.galerie::-webkit-scrollbar{
+display:none;
+}
+.galerie img:nth-child(even) {
+    margin-top: 50px; /* effet escalier */
+}
+
+/* =====================
+   POPUP LUTTEURS
+===================== */
+
+.popup{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.7);
+display:none;
+align-items:center;
+justify-content:center;
+z-index:3000;
+}
+
+.popup-box{
+background:white;
+padding:40px;
+border-radius:10px;
+max-width:700px;
+max-height:80vh;
+overflow:auto;
+position:relative;
+}
+
+.popup-box h2{
+margin-bottom:15px;
+color:#3e2c1c;
+}
+
+.popup-box p{
+font-size:15px;
+line-height:1.7;
+color:#63400f;
+}
+
+/* croix fermer */
+
+.fermer{
+position:absolute;
+top:15px;
+right:20px;
+font-size:22px;
+cursor:pointer;
+font-weight:bold;
+color:#333;
+}
+
+.fermer:hover{
+color:red;
+}
+
+/* =====================
+   FOOTER
+===================== */
+
+footer{
+
+background:#2b1c12;
+
+color:#ffd78c;
+
+padding:60px 80px 30px 80px;
+
+margin-top:auto;
+
+width:100%;
+
+}
+
+.footer-container{
+
+margin:0;
+
+padding: 0;
+
+display:flex;
+
+justify-content:space-between;
+
+gap:40px;
+
+}
+
+.footer-section{
+
+flex:1;
+
+}
+
+.footer-section h3{
+
+margin-bottom:15px;
+
+font-size:18px;
+
+}
+
+.footer-section p{
+
+color:#e6cfa2;
+
+font-size:14px;
+
+line-height:1.6;
+
+}
+
+.footer-section ul{
+
+list-style:none;
+
+padding:0;
+
+}
+
+.footer-section ul li{
+
+margin-bottom:8px;
+
+}
+
+.footer-section ul li a{
+
+text-decoration:none;
+
+color:#e6cfa2;
+
+transition:0.3s;
+
+}
+
+.footer-section ul li a:hover{
+
+color:#ffd78c;
+
+}
+
+.footer-bottom{
+
+border-top:1px solid rgba(255,215,140,0.3);
+
+margin-top:40px;
+
+padding-top:20px;
+
+text-align:center;
+
+font-size:13px;
+
+color:#c9b08a;
+
+}
+
+
+html, body{
+height:100%;
+}
+
+body{
+
+min-height:100vh;
+
+display:flex;
+
+flex-direction:column;
+
+}
+main{
+flex:1;
+}
+
+
+
+/* =====================
+   RESPONSIVE
+===================== */
+
+@media (max-width:900px){
+
+.bloc-lutteurs{
+grid-template-columns:repeat(2,1fr);
+}
+
+.combats{
+grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media (max-width:500px){
+
+.bloc-lutteurs{
+grid-template-columns:1fr;
+}
+
+.combats{
+grid-template-columns:1fr;
+}
+
+header{
+padding:15px 30px;
+}
+
+}  

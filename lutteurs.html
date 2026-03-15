@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nos Lutteurs - La Lutte Sénégalaise</title>
+<link rel="stylesheet" href="style2.css">
+
+</head>
+
+<body class="page-lutteurs">
+<header>
+  <div class="logo">LA LUTTE SÉNÉGALAISE</div>
+  <nav>
+    <a href="index.html">Accueil</a>
+    <a href="lutteurs.html">Lutteurs</a>
+    <a href="combats.html">Combats</a>
+    <a href="galerie.html">Galerie</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero-lutteurs">
+
+<div class="hero-lutteurs-texte">
+<h1>Les Grands Lutteurs</h1>
+<p>Découvrez les champions emblématiques de la lutte sénégalaise</p>
+</div>
+
+</section>
+
+  <section class="intro-lutteurs">
+    <p>
+      Le Laamb, est bien plus qu’un sport. 
+      C’est un art de vivre, une tradition et un spectacle où la force, la stratégie et le courage se rencontrent. 
+      Explorez les parcours des plus grands lutteurs qui ont marqué l’histoire des arènes.
+    </p>
+  </section>
+
+<section class="conteneur-lutteurs">
+
+<div class="bloc-lutteurs">
+
+
+<div class="lutteur">
+<div class="image-lutteur">
+<img src="download-modou.jpg" alt="Modou Lo">
+<div class="bouton-centre">
+  
+<button onclick="ouvrirPopup('modou')">Explorer</button>
+</div>
+</div>
+</div>
+
+<div class="lutteur">
+<div class="image-lutteur">
+<img src="2balla.jpg" alt="Balla Gaye 2">
+<div class="bouton-centre">
+<button onclick="ouvrirPopup('balla')">Explorer</button>
+</div>
+</div>
+</div>
+
+</div>
+
+
+<div class="bloc-lutteurs">
+
+<div class="lutteur">
+<div class="image-lutteur">
+<img src="download-yek.jpg" alt="Yékini">
+<div class="bouton-centre">
+<button onclick="ouvrirPopup('yekini')">Explorer</button>
+</div>
+</div>
+</div>
+
+<div class="lutteur">
+<div class="image-lutteur">
+<img src="WhatsApp Image 2026-03-15 at 15.28.25.jpeg" alt="Tyson">
+<div class="bouton-centre">
+<button onclick="ouvrirPopup('tyson')">Explorer</button>
+</div>
+</div>
+</div>
+
+</div>
+
+
+<div class="bloc-lutteurs">
+
+<div class="lutteur">
+<div class="image-lutteur">
+<img src="download-eumeu.jpg" alt="Eumeu">
+<div class="bouton-centre">
+<button onclick="ouvrirPopup('eumeu')">Explorer</button>
+</div>
+</div>
+</div>
+
+<div class="lutteur">
+<div class="image-lutteur">
+<img src="download-bombardiet.jpg" alt="Bombardier">
+<div class="bouton-centre">
+<button onclick="ouvrirPopup('bombardier')">Explorer</button>
+</div>
+</div>
+</div>
+
+</div>
+
+
+<div class="bloc-lutteurs">
+
+<div class="lutteur">
+<div class="image-lutteur">
+<img src="download-manga.jpg" alt="Manga 2">
+<div class="bouton-centre">
+<button onclick="ouvrirPopup('manga')">Explorer</button>
+</div>
+</div>
+</div>
+
+<div class="lutteur">
+<div class="image-lutteur">
+<img src="download-falaye.jpg" alt="Falaye Baldé">
+<div class="bouton-centre">
+<button onclick="ouvrirPopup('falaye')">Explorer</button>
+</div>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<script>
+
+function ouvrirPopup(lutteur){
+
+let texte = ""
+
+if(lutteur === "modou"){
+texte = `
+<h2>Modou Lo</h2>
+<p>Modou Lô, de son vrai nom Doudou Lô, est une légende de la lutte sénégalaise, né le 1er janvier 1985 à Taïba.Issu d'une famille modeste , il a été maçon, soudeur et charretier avant de se lancer dans la lutte. Il a grandi dans les Parcelles Assainies et a débuté sa carrière professionnelle le 4 février 2006.
+Surnommé « Xaragne Lô » il a marqué l'arène par son ascension rapide avec 14 victoires consécutives à ses débuts et a affronté les plus grands noms de l'arène, dont Balla Gaye 2 et Bombardier. Il a été le meilleur lutteur de l'ANPS en 2015-2016. En 2019 après avoir battu Eumeu Sène,Il devient le 7e roi des arènes de l'histoire.
+Il confirme son statut en battant Ama Baldé en 52 secondes le 5 novembre 2023, et Boy Niang 2 le 1er janvier 2024.
+Il est l'un des lutteurs les plus populaires et les mieux payés de l'histoire, souvent considéré comme une "légende vivante". Il vise à terminer sa carrière en tant que roi des arènes.</p>
+`
+}
+
+else if(lutteur === "balla"){
+texte = `
+<h2>Balla Gaye 2</h2>
+<p>Balla Gaye 2, de son vrai nom Omar Sakho, est une figure emblématique de la lutte sénégalaise avec frappe.
+ Surnommé le « Lion de Guédiawaye », il est le fils de la légende Double Less et a marqué l'histoire de ce sport par sa précocité et sa technique. Balla a connu une ascension fulgurante dès ses débuts en 2005. Son parcours est jalonné de victoires contre les plus grands noms de l'arène : 
+En 2012, Il a mis fin à l'invincibilité de 15 ans de Yékini, s'emparant ainsi de la couronne de Roi des Arènes.
+Il a battu son principal rival Modou Lô à deux reprises (2010 et 2019), des combats qui restent parmi les plus marquants de sa carrière.
+Il a terrassé des ténors comme Tyson, Moustapha Guèye (le Tigre de Fass), Baboye, et Tapha Tine. 
+
+Le palmarès de Balla Gaye 2 témoigne de sa longévité malgré des périodes de doute.
+Avec 30 combats officiels dont 23 victoires et 7 défaites (contre Issa Pouye, Eumeu Sène (x2), Bombardier (x2), Boy Niang 2, et Siteu le 20 juillet 2025).
+Il a été honoré du titre d'« Empereur de l'Arène » en 2024. 
+
+Après sa défaite surprise contre Siteu en juillet 2025, une partie de l'opinion s'interroge sur sa retraite. Cependant, il reste une figure centrale et un mentor potentiel, notamment pour son frère Sa Thiès qui est pressenti pour un combat royal contre Modou Lô.</p>
+`
+}
+
+else if(lutteur === "yekini"){
+texte = `
+<h2>Yékini</h2>
+<p>Yakhya Diop, dit  Yékini, est considéré par beaucoup comme le plus grand lutteur de l'histoire du Sénégal. Surnommé « l'Empereur des Arènes », il a dominé la discipline pendant près de deux décennies grâce à une technique exceptionnelle issue de la lutte traditionnelle (sans frappe).Son parcours est marqué par une invincibilité légendaire qui a duré 15 ans. 
+Il s'empare de la couronne en battant Bombardier en 2004 et la conserve pendant 8 ans.
+Durant son apogée, il a terrassé tous les grands noms de sa génération, notamment Tyson, Bombardier, Balla Bèye 2 et Gris Bordeaux.
+Avant de briller en lutte avec frappe, il fut plusieurs fois champion d'Afrique de lutte sans frappe, ce qui lui a conféré une maîtrise technique inégalée. 
+Palmarès en Lutte avec Frappe
+À la fin de sa carrière en 2016, son bilan officiel s'établit comme suit : 22 combats dont 19 victoires,1 match nul (contre Moustapha Guèye en 2006) et 2 défaites dont son dernier combat avant la retraite. 
+Yékini a officiellement annoncé sa retraite le 17 octobre 2016. Au-delà de ses records, il est resté un modèle d'humilité et de discipline. Son héritage perdure à travers son écurie, Ndakaru, et son influence sur les nouvelles générations qui voient en lui la référence absolue en matière de « lutte pure ».</p>
+`
+}
+
+else if(lutteur === "tyson"){
+texte = `
+<h2>Tyson</h2>
+<p>Mouhamed Ndao dit Tyson, est l'homme qui a révolutionné la lutte sénégalaise dans les années 90 en y introduisant le concept de « Sport-Business ». Leader de l'écurie Boul Faalé, il a transformé la lutte d'un sport traditionnel en un spectacle moderne ultra-médiatisé.
+Avant lui, la lutte était perçue comme une activité purement coutumière. Tyson a apporté :
+
+Le Show (Ses entrées spectaculaires avec le drapeau américain sur les épaules.),
+Le Business (Il a été le premier lutteur à exiger et obtenir des cachets dépassant les 100 millions de FCFA.), Le Style (Son slogan « Boul Faalé » (ne t'en fais pas) est devenu un véritable mouvement social chez les jeunes de la banlieue.)
+En 1995,il terrasse la légende Manga II, marquant la fin de l'ère de la lutte pure et le début de l'ère du spectacle et de la force physique.
+Cepandant,sa carrière a connu un coup d'arrêt après sa défaite contre Yékini (2004) et une suspension controversée suite à son refus de reprendre un combat contre Bombardier en 2007.
+Tyson a terminé sa carrière sur une série de défaites face à la nouvelle génération : Contre Yékini, Bombardier et enfin Balla Gaye 2 en 2011. Après une dernière défaite contre Gris Bordeaux en 2015, il s'est retiré de l'arène.
+
+Aujourd'hui, il reste une icône, respecté pour avoir ouvert la voie aux salaires mirobolants que touchent les lutteurs actuels.</p>
+`
+}
+
+else if(lutteur === "eumeu"){
+texte = `
+<h2>Eumeu Sène</h2>
+<p>Mamadou Ngom alias Eumeu Séne , est l'un des lutteurs les plus populaires et les plus respectés du Sénégal. Leader de l'écurie Tay Shinger, il est surnommé le « Fou de Pikine » pour son style imprévisible et sa ténacité. 
+Ancien lieutenant de Tyson au sein de l'écurie Boul Faalé, il a pris son envol en créant sa propre structure en 2011. 
+Il devient Roi des Arènes le 28 juillet 2018 en battant Bombardier mais cède sa couronne à Modou Lô après un K.O. spectaculaire. 
+À plus de 45 ans, Eumeu Sène continue de se mesurer à l'élite de l'arène, malgré les débats sur son âge limite. 
+Il a prouvé qu'il restait un "VIP" redoutable en dominant le frère de Balla Gaye 2. Toutefois le 3 août 2025 dans un choc très attendu à l'Arène Nationale, il s'est incliné face à l'invaincu Franc.
+Toujours actif en 2026, il a récemment exprimé son intérêt pour des défis contre de jeunes espoirs comme Pokola Baldé ou Prince, tout en restant en conflit verbal avec Ada Fass. 
+Au 12 mars 2026, son bilan en lutte avec frappe est l'un des plus denses de l'arène :
+Des victoires notables contre Balla Gaye 2, Bombardier, Gris Bordeaux, Lac de Guiers 2, et Sa Thiès.
+Mais aussi d'autres défaites contre Modou Lô (2 fois), Tapha Tine, Lac de Guiers 2, et Franc.
+Néanmoins Il est le seul lutteur à avoir battu deux fois Balla Gaye 2, ce qui lui vaut une place particulière dans l'histoire de la lutte.</p>
+`
+}
+
+else if(lutteur === "bombardier"){
+texte = `
+<h2>Bombardier</h2>
+<p>Serigne Ousmane Dia dit Bombardier ou le « B52 », est une légende vivante de la lutte sénégalaise . Originaire de Mbour. Il est le seul lutteur de l'histoire à avoir conquis le titre de Roi des Arènes à deux reprises (en 2002 et 2014). Son premier régne était de 2002 à 2004,il détrône Tyson le 25 décembre 2002 avant de perdre son titre face à Yékini en mars 2004.
+Puis un second de 2014 à 2018 où il réalise l'exploit de redevenir Roi en battant Balla Gaye 2 le 8 juin 2014. Il défend ensuite son titre avec succès contre Modou Lô (2015) avant de chuter devant Eumeu Sène en 2018. 
+Le 27 juillet 2025, Bombardier a officiellement mis un terme à sa carrière dans l'arène après une défaite contre le jeune espoir Jackson Jr lors d'une journée organisée par Gaston Production.
+Immédiatement après ce combat, il a déclaré : « J’arrête ma carrière dès aujourd’hui. Je vais accompagner les jeunes lutteurs de Mbour et me concentrer sur le MMA ».
+Il a pris sa retraite à l'âge de 48 ans, après une carrière exceptionnelle de 30 ans débutée en avril 1995. 
+Bombardier a marqué l'arène par sa force brute et sa capacité à reconquérir le sommet .
+Au terme de son dernier combat en juillet 2025, son bilan en lutte avec frappe est le suivant : 32 combats dont 19 victoires notamment contre Tyson (2 fois), Balla Gaye 2 (2 fois), Modou Lô et Moustapha Guèye.Et 13 défaites ,contre Yékini (3 fois), Eumeu Sène (2 fois), Tapha Tine (2 fois), et plus récemment face à la nouvelle génération (Reug Reug, Franc, Jackson Jr).</p>
+`
+}
+
+else if(lutteur === "manga"){
+texte = `
+<h2>Manga 2</h2>
+<p>Manga 2, de son vrai nom Hyacinthe Ndiaye, est la première véritable légende de l'ère moderne de la lutte sénégalaise. Originaire des îles du Saloum, il est celui qui a porté le titre de Roi des Arènes pendant le plus long règne de l'histoire.
+
+C'est avec lui que le titre de "Roi des Arènes" a été officiellement instauré et popularisé .
+En 1984,Il est couronné après sa victoire sur le redoutable Mbaye Guèye (le premier Tigre de Fass).
+Il a conservé sa couronne de 1984 jusqu'à sa chute en 1999, dominant toute une génération de lutteurs.
+Il perd son titre face à la montée en puissance de Tyson un combat historique qui a marqué le passage de la lutte traditionnelle à la lutte "spectacle".
+Manga 2 était réputé pour sa science du combat et sa morphologie impressionnante pour l'époque .Issu de la lutte traditionnelle pure (sans frappe), il maîtrisait des prises complexes qui rendaient ses adversaires impuissants.
+il était connu pour son calme olympien et son respect rigoureux des traditions mystiques et sportives.
+Après sa retraite, il est resté très impliqué dans la gestion de la lutte et la promotion de la lutte sans frappe à travers le Sénégal.
+
+Il terassa Mbaye Guèye, Mor Fadam, Toubabou Dior, Mohamed Ali...
+et perdit face à Tyson (le combat de la passation de pouvoir) et Bombardier (son dernier combat en 2002).
+Il a officiellement quitté les arènes en 2002, laissant derrière lui un héritage de noblesse et de technique..</p>
+`
+}
+
+
+
+
+else if(lutteur === "falaye"){
+texte = `
+<h2>Falaye Baldé</h2>
+<p>Falaye Baldé (1932-2013) est l'un des monuments les plus illustres de l'histoire de la lutte sénégalaise. Originaire de Gabou en Guinée-Bissau, il s'est imposé comme le "Seigneur des Arènes" durant les années 1960 et 1970. 
+Il détient l'un des records les plus impressionnants de la discipline : 
+137 combats officiels dont 134 victoire,2 matchs nuls et Une seule défaite concédée durant toute sa carrièr .
+
+Surnommé le « Lion de Gabou »,il était admiré pour sa force de frappe, sa vivacité et sa technicité exceptionnelle. Sa renommée était telle que le président Léopold Sédar Senghor assistait régulièrement à ses combats. 
+Falaye Baldé a transmis son génie à ses fils, formant une véritable dynastie dans l'arène de Pikine : Ama Baldé, Jules Baldé et Pathé Baldé 
+
+Le nom de Falaye Baldé continue d'être honoré dans l'arène moderne : 
+ Des trophées portant son nom sont régulièrement organisés pour célébrer sa mémoire, comme le duel Ama Dia vs Siteu Farramarene en mai 2025 et
+l'écurie Falaye Baldé Basée à Pikine, cette école de lutte continue de former des champions sous l'égide de ses héritiers.</p>
+`
+}
+
+document.getElementById("contenu-popup").innerHTML = texte
+document.getElementById("popup").style.display="flex"
+
+}
+
+function fermerPopup(){
+document.getElementById("popup").style.display="none"
+}
+
+</script>
+</main>
+
+<div id="popup" class="popup">
+
+<div class="popup-box">
+
+<span class="fermer" onclick="fermerPopup()">✖</span>
+
+<div id="contenu-popup"></div>
+
+</div>
+
+</div>
+<footer>
+
+<div class="footer-container">
+
+<div class="footer-section">
+<h3>La Lutte Sénégalaise</h3>
+<p>
+Site dédié à la découverte du Laamb, sport traditionnel du Sénégal
+mêlant force, courage et culture.
+</p>
+</div>
+
+<div class="footer-section">
+<h3>Navigation</h3>
+<ul>
+<li><a href="index.html">Accueil</a></li>
+<li><a href="decouvrir.html">Découvrir</a></li>
+<li><a href="lutteurs.html">Lutteurs</a></li>
+<li><a href="combats.html">Combats</a></li>
+<li><a href="galerie.html">Galerie</a></li>
+</ul>
+</div>
+
+<div class="footer-section">
+<h3>Contact</h3>
+<p>Dakar, Sénégal</p>
+<p>Email : contact@laamb.sn</p>
+<p>Téléphone : +221 XX XXX XX XX</p>
+</div>
+
+</div>
+
+<div class="footer-bottom">
+<p>© 2026 La Lutte Sénégalaise — Tous droits réservés</p>
+</div>
+
+</footer>
+</body>
+</html>
